@@ -1,0 +1,32 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+ .container{
+     font-family: 'Open Sans Condensed', sans-serif;
+     h1{
+     font-size:100px;
+     color: rgb(51, 50, 50);
+     text-align: center;
+     margin-top: 200px;
+     }
+ }
+ img{
+    background-size: cover;
+    background-position: center;
+   
+    width: 100%;
+    opacity: 0.3;
+    
+    position: absolute;
+     top:-50px;
+      
+     
+    opacity: 0.5;
+    z-index: -2;
+    margin-top: 90px;
+    img{
+      height:100vh;
+
+    }
+  
+}
