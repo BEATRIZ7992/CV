@@ -1,0 +1,11 @@
+<select class="form-select" aria-label="Default select example" (change)="onChange($event)">
+    <option selected>Open this select menu</option>
+    <option value="todos">Todos</option>
+    <option [value]="categoria" *ngFor="let categoria of listaCategory">{{categoria}}</option>
+    <option value="2"> <a class="icon" href="../../../assets/images/ECV.pdf" download="">English 🇬🇧</a>
+    </option>
+    <option value=""><a class="icon" href="../../../assets/images/BEATRIZ CAMPOS DE LA OLIVA-8.pdf"
+            download="">Español🇪🇸</a></option>
+    <option value="2">Todos</option>
+
+</select>

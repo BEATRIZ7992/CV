@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { cv, InformacionService } from 'src/app/services/informacion.service';
 
 @Component({
-  selector: 'app-sobremi',
-  templateUrl: './sobremi.component.html',
-  styleUrls: ['./sobremi.component.scss']
+  selector: 'app-cv',
+  templateUrl: './cv.component.html',
+  styleUrls: ['./cv.component.scss']
 })
-export class SobremiComponent implements OnInit {
+export class CvComponent implements OnInit {
 
   ponerCv: cv[]
   listaCategory: string[]
