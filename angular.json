@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "acme-shared": {
+      "projectType": "library",
+      "root": "projects/acme-shared",
+      "sourceRoot": "projects/acme-shared/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/acme-shared/tsconfig.lib.json",
+            "project": "projects/acme-shared/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/acme-shared/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/acme-shared/src/test.ts",
+            "tsConfig": "projects/acme-shared/tsconfig.spec.json",
+            "karmaConfig": "projects/acme-shared/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/acme-shared/tsconfig.lib.json",
+              "projects/acme-shared/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "Cv"

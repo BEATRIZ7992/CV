@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CvComponent } from './components/cv/cv.component';
+import { AcmeSharedModule } from 'acme-shared';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CvComponent } from './components/cv/cv.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AcmeSharedModule
 
   ],
   providers: [],

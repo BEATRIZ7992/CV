@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "acme-shared": [
+        "dist/acme-shared/acme-shared",
+        "dist/acme-shared"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
