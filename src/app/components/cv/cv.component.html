@@ -1,4 +1,4 @@
-<select class="form-select" aria-label="Default select example" (change)="onChange($event)">
+<select class="btn-group" aria-label="Default select example" (change)="onChange($event)">
     <option selected>Open this select menu</option>
     <option value="todos">Todos</option>
     <option [value]="categoria" *ngFor="let categoria of listaCategory">{{categoria}}</option>
@@ -9,3 +9,30 @@
     <option value="2">Todos</option>
 
 </select>
+
+<select (change)="onChange($event)">
+    <option value="todos">Todos</option>
+    <option [value]="categoria" *ngFor="let categoria of listaCategory">{{categoria}}</option>
+
+</select>
+
+<div><a class="icon" href="../../../assets/images/ECV.pdf" download="">cv</a></div>
+
+<div class="container">
+
+
+    <div class="col-12 col-md-6 col-xs-12" *ngFor="let cv of ponerCv">
+
+
+
+        <img [src]="cv.idioma">
+
+
+<button >ok</button>
+
+
+
+    </div>
+
+
+</div>

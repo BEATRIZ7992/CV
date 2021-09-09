@@ -1,1 +1,24 @@
-<p>hardskill works!</p>
+<select class="btn-group" aria-label="Default select example" (change)="onChange($event)">
+    <option value="fullstack">Full-Stack</option>
+    <option [value]="categoria" *ngFor="let categoria of listaCategory">{{categoria}}</option>
+
+</select>
+
+<div class="container">
+
+
+    <div class="col-12 col-md-6 col-xs-12" *ngFor="let tec of ponerTec">
+
+
+
+        <img [src]="tec.imagen">
+
+
+
+
+
+
+    </div>
+
+
+</div>

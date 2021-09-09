@@ -1,0 +1,33 @@
+
+*{
+    margin-left: 20px;
+}
+img{
+    max-height:200px ;
+    max-width: 200px;
+
+}
+
+.container{
+    display: grid;
+    
+    color: rgb(21, 58, 82);
+    padding: 20px;
+    font-weight: lighter;
+    font-family:unset;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    margin-bottom: 30px;
+}
+
+
+.btn-group{
+    margin-left: 40%;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(174, 176, 177, 0.24);
+    border:rgba(51, 61, 70, 0.404) 40px;
+    height: 50px;
+    margin-top: 10%;
+    color: rgb(175, 170, 170);
+}

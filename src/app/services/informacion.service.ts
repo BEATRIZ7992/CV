@@ -7,14 +7,17 @@ export interface cv {
   id?: number;
   idioma?: string;
   categoria?: string;
+
 }
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class InformacionService {
 
-  arrCv: cv[]
+  arrCv: cv[];
+
 
   constructor() { }
 
