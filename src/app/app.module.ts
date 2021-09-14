@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CvComponent } from './components/cv/cv.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { CvComponent } from './components/cv/cv.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+
 
 
   ],

@@ -2,25 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 
-    
-
-
-
 
 
 .pan{
-    max-height:150px ;
+    max-height:100px ;
     max-width: 150px;
     margin-right: 60px;
     margin-top: 150px;
     margin-left: 60px;
+    justify-content: center;
 
 }
 .container{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 50px;
-    margin-left: 100px;
+    margin-left: 200px;
    
+}
+
+.codigo{
+    .code{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 30px;
+        justify-content: center;
+    }
 }
 .foto1{
     background-size: cover;
@@ -41,3 +47,15 @@
     
       }
     }
+    .foto{
+        margin-left: 80px; 
+
+
+    }
+a{
+    
+        text-decoration: none;
+        text-align: center;
+        color: black;
+   
+}

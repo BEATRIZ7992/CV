@@ -21,9 +21,6 @@ export class HardskillComponent implements OnInit {
     this.listaCategory = await this.tecnologiasServices.getCategory();
 
 
-
-
-
   }
   async onChange($event) {
     try {
