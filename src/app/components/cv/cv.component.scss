@@ -1,14 +1,51 @@
 *{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    
 }
 
 .btn-group{
     margin-left: 40%;
     font-size: 20px;
     text-align: center;
-    background-color: rgba(115, 122, 126, 0.24);
+    background-color: rgba(179, 182, 185, 0.349);
     border:rgb(10, 40, 63) 40px;
     height: 50px;
     margin-top: 20%;
+}
+.foto2{
+    height: 200px;
+    width: 200px;
+    opacity: 0.8;
+}
+
+.contenedor{
+
+
+    margin-top: 200px;
+    color: rgb(21, 58, 82);
+    padding: 20px;
+    font-weight: lighter;
+    font-family:unset;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    margin-bottom: 30px;
+}
+.foto{
+background-size: cover;
+background-position: center;
+
+width: 100%;
+opacity: 0.1;
+
+position: absolute;
+top:-50px;
+  
+ 
+opacity: 0.3;
+z-index: -8;
+margin-top: 90px;
+img{
+    height:1000vh;
+
+  }
 }

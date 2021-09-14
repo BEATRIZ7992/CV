@@ -51,16 +51,7 @@ export class ContactoComponent implements OnInit {
 
       password_2: new FormControl(),
 
-      bodas: new FormControl(),
-      eventosnocturnos: new FormControl(),
-      producto: new FormControl(),
-      publicidad: new FormControl(),
-      paisaje: new FormControl(),
-      retrato: new FormControl(),
-      modelos: new FormControl(),
-      artistica: new FormControl(),
-      documental: new FormControl(),
-      deportes: new FormControl()
+
 
 
 

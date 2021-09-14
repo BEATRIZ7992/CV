@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cv, InformacionService } from 'src/app/services/informacion.service';
+import { Informacion, InformacionService } from 'src/app/services/informacion.service';
 
 @Component({
   selector: 'app-cv',
@@ -8,12 +8,16 @@ import { cv, InformacionService } from 'src/app/services/informacion.service';
 })
 export class CvComponent implements OnInit {
 
-  ponerCv: cv[]
-  listaCategory: string[]
+  ponerCv: Informacion[];
+  listaCategory: string[];
 
   constructor(private informacionService: InformacionService) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+
+    this.ponerCv = await this.informacionService.getAllCv();
+
+    this.listaCategory = await this.informacionService.getCategory();
   }
 
   async onChange($event) {

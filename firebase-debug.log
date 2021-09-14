@@ -1,0 +1,54 @@
+[debug] [2021-09-13T13:49:40.207Z] ----------------------------------------------------------------------
+[debug] [2021-09-13T13:49:40.209Z] Command:       /Users/bea/.nvm/versions/node/v15.7.0/bin/node /Users/bea/.nvm/versions/node/v15.7.0/bin/firebase init
+[debug] [2021-09-13T13:49:40.209Z] CLI Version:   9.18.0
+[debug] [2021-09-13T13:49:40.209Z] Platform:      darwin
+[debug] [2021-09-13T13:49:40.209Z] Node Version:  v15.7.0
+[debug] [2021-09-13T13:49:40.211Z] Time:          Mon Sep 13 2021 15:49:40 GMT+0200 (hora de verano de Europa central)
+[debug] [2021-09-13T13:49:40.211Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-13T13:49:40.218Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-13T13:49:40.219Z] > authorizing via signed-in user (beacampos127@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/bea/Desktop/neolandBootcamp/proyectosPersonales/Cv
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-09-13T13:50:12.650Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-13T13:50:12.650Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-13T13:50:12.777Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 13 Sep 2021 13:50:12 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-13T13:50:12.813Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"CV","name":"yes"}
+[debug] [2021-09-13T13:50:13.641Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 13 Sep 2021 13:50:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=655","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-13T13:50:13.641Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at least 6 characters long"},{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name must be at least 4 characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2021-09-13T13:50:13.645Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at module.exports (/Users/bea/.nvm/versions/node/v15.7.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/bea/.nvm/versions/node/v15.7.0/lib/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/Users/bea/.nvm/versions/node/v15.7.0/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:379:20)
+    at Request.EventEmitter.emit (node:domain:470:12)
+    at Request.<anonymous> (/Users/bea/.nvm/versions/node/v15.7.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (node:events:379:20)
+    at Request.EventEmitter.emit (node:domain:470:12)
+    at IncomingMessage.<anonymous> (/Users/bea/.nvm/versions/node/v15.7.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (node:events:485:28)
+    at IncomingMessage.emit (node:events:391:22)
+    at IncomingMessage.EventEmitter.emit (node:domain:470:12)
+    at endReadableNT (node:internal/streams/readable:1307:12)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
