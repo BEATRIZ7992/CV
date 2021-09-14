@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cv, InformacionService } from 'src/app/services/informacion.service';
+import { Informacion, InformacionService } from 'src/app/services/informacion.service';
 
 @Component({
   selector: 'app-sobremi',
@@ -8,7 +8,7 @@ import { cv, InformacionService } from 'src/app/services/informacion.service';
 })
 export class SobremiComponent implements OnInit {
 
-  ponerCv: cv[]
+  ponerCv: Informacion[]
   listaCategory: string[]
 
   constructor(private informacionService: InformacionService) { }

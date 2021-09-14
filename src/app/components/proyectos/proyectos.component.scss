@@ -1,12 +1,43 @@
-*{
-    margin-left: 20px;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+    
+
+
+
+
+
+.pan{
+    max-height:150px ;
+    max-width: 150px;
+    margin-right: 60px;
+    margin-top: 150px;
+    margin-left: 60px;
+
 }
-
-
-
-
-img{
-    max-height:600px ;
-    max-width: 600px;
-
+.container{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    margin-left: 100px;
+   
 }
+.foto1{
+    background-size: cover;
+    background-position: center;
+    
+    width: 100%;
+    opacity: 0.1;
+    
+    position: absolute;
+    top:-50px;
+      
+     
+    opacity: 0.3;
+    z-index: -2;
+    margin-top: 90px;
+    img{
+        height:600vh;
+    
+      }
+    }

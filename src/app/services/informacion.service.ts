@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
 
-import { promise } from 'selenium-webdriver';
+import { informacion } from '../db_cv/cv.db';
 
 
-export interface cv {
-  id?: number;
-  idioma?: string;
-  categoria?: string;
+
+export interface Informacion {
+  id?: number,
+  nombre?: string,
+  categoria?: string,
+  imagen?: string,
+  link?: string
+
 
 }
 
@@ -16,12 +20,21 @@ export interface cv {
 })
 export class InformacionService {
 
-  arrCv: cv[];
+  arrCv: Informacion[];
 
 
-  constructor() { }
+  constructor() {
 
-  getAllCv(): Promise<cv[]> {
+    if (localStorage.getItem('arr_cv')) {
+      const strArr = localStorage.getItem('arr_cv');
+      this.arrCv = JSON.parse(strArr);
+    } else {
+      this.arrCv = informacion;
+
+    }
+  }
+
+  getAllCv(): Promise<Informacion[]> {
     return new Promise((resolve, rejects) => {
       resolve(this.arrCv)
     })
@@ -29,8 +42,8 @@ export class InformacionService {
 
   }
 
-  getPostByCategory(pCategoria: string): Promise<cv[]> {
-    return new Promise<cv[]>((resolve, reject) => {
+  getPostByCategory(pCategoria: string): Promise<Informacion[]> {
+    return new Promise<Informacion[]>((resolve, reject) => {
       const arraFiltrado = [];
 
       for (let c of this.arrCv) {

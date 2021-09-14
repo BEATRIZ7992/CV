@@ -16,7 +16,8 @@ export interface Tecnologias {
 
 export class TecnologiasService {
 
-  arrTc: Tecnologias[]
+  arrTc: Tecnologias[];
+
 
   constructor() {
     if (localStorage.getItem('arr_tec')) {
@@ -57,5 +58,7 @@ export class TecnologiasService {
     const nuevoArr = this.arrTc.map(arrCategory => arrCategory.categoria);
     return [...new Set(nuevoArr)]
   }
+
+
 }
 
