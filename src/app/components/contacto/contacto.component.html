@@ -1,8 +1,27 @@
-<form class="form">
+<form class="form" id="form" action="https://formspree.io/f/xleazgaa" method="POST">
     <h2>CONTACTO</h2>
-    <p type="Name:"><input placeholder="Nombre"></p>
-    <p type="Email:"><input placeholder="E-mail"></p>
-    <p type="Mensaje:"><input placeholder="Mensaje"></p>
-    <button>Enviar</button>
+    <label type="Name:"><input type="text" placeholder="Nombre"></label>
+    <label type="Email:"><input type="email" name="_replyto" placeholder="E-mail"></label>
+    <label type="Mensaje:"><input type="text" placeholder="Mensaje"></label>
+    <button type="submit">Enviar</button>
 
 </form>
+
+<script>
+    const $form = document.querySelector('#form')
+    $form.addEventListener('submit', handlesubmit)
+
+    async function handleSubmit(event) {
+        event.preventDefault()
+        const form = new formData(this)
+        const respose = await fetch(this.action, {
+            method: this.method,
+            body: form,
+            headers: {
+                'Accept': 'applications/json'
+            }
+        })
+
+
+    }
+</script>

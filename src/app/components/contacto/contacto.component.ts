@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -10,10 +10,8 @@ export class ContactoComponent implements OnInit {
 
   formulario: FormGroup
 
-  constructor(
+  constructor(private elementRef: ElementRef) {
 
-
-  ) {
 
     this.formulario = new FormGroup({
 
@@ -58,7 +56,11 @@ export class ContactoComponent implements OnInit {
     }, [this.passwordValidator])
   }
 
-  ngOnInit(): void {
+  public ngOnInit() {
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://somedomain.com/somescript";
+    this.elementRef.nativeElement.appendChild(s);
   }
 
 
@@ -77,4 +79,7 @@ export class ContactoComponent implements OnInit {
 
 
   }
+
 }
+
+
